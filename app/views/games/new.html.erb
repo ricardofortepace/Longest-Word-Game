@@ -1,0 +1,17 @@
+<h1>New Game</h1>
+<div class="letras">
+  <%@letters.each do |letter|%>
+    <p class="letra"><%=letter%></p>
+    <%end %>
+</div>
+
+<div class="campo">
+  <form action="/games" method="post">
+    <label for="name">What is the longest word you can find?</label>
+    <br>
+    <input type="text" id="name" name="word">
+
+
+    <br>
+  </form>
+</div>
